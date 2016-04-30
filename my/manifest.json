@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "JS/mysc/background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "fbAutoTag.js" ],
+      "matches": [ "http://www.facebook.com/*", "https://www.facebook.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "default_locale": "en",
+   "description": "Facebook Video Watch",
+   "icons": {
+      "128": "images/video.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzTochPO5MCme+3RXiNQP7vWmbEbNAoEriKijij5HQ7JpaOpQLNrd6jthFzNO5pstoi4wMBg4/Hu31MRbKuSm251OhLsQ5/afM3q4Kvt9xg0RN9p0atdTJ7BOyIPbjMD7g+7dsjAc6fGNJkxQW7GbAPtwDiw/TsH71nvOjfuxuoTYRQIUQ+1PiLc+E6qkgSISlSlNvW2sV/pKHnYO+CUDmCPufH+ekmAMNQ0dQ3LhswgaoNF3sA5VzXhL0mFUegWhfBlxzFD11g8pixMTfT8utUSZFPnuK5/jy7Yztq46DP1Vzw/KGIUBIGd59820C9W3aBMR0j8ZmNAMWelEIl/jpQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "31.0",
+   "name": "Facebook Video Watch",
+   "offline_enabled": false,
+   "permissions": [ "\u003Call_urls>", "tabs", "cookies", "contextMenus", "webNavigation", "webRequest", "webRequestBlocking", "management", "storage" ],
+   "platforms": [ {
+      "os": "win"
+   } ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0",
+   "web_accessible_resources": [ "" ]
+}
